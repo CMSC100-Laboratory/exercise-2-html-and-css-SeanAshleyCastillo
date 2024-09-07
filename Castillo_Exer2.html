@@ -1,22 +1,93 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title> Exercise 2 </title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <nav class="navbar">
-            <ul>
-                <li><a href="Castillo_Exer2.html">Home</a></li>
-                <li><a href="About.html">About</a></li>
-                <li><a href="Projects.html">Projects</a></li>
-                <li><a href="Contact.html">Contact</a></li>
-            </ul>
-        </nav>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-        <main>
-            <h3> This is the Home Page</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In architecto blanditiis quibusdam aliquam voluptatum voluptate nemo, libero saepe quo et magni omnis provident id ducimus aut, voluptatibus illum ipsam a?</p>
-        </main>
-    </body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li class="logo">
+                <a href="#pfp"><img src="cc_logo.png" alt="Logo"></a>
+            </li>            
+            <li><a href="#about">Autobiography</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Profile Image Section -->
+        <section id="pfp">
+            <div class="pfpimage">
+                <center><img src="pfp.jpg" alt="Profile Image"></center>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <!-- Introduction Section -->
+            <div class="container">
+                <div class="content">
+                    <h1>Autobiography</h1>
+                    <p>I am Sean Ashley F. Castillo, currently a BS Computer Science student at the University of the Philippines Los Baños.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h1>Projects</h1>
+            <div class="project-image">
+                <center><img src="Splash2.png" height="350px" width="350px"></center>
+            </div> 
+            <div class="project-container">
+                <p>Big Iron is a two-player real-time game that is skill-based.</p>
+            </div>
+        </section>
+            
+        <!-- Skills Section -->
+        <section id="skills">
+            <h1>Skills</h1>
+            <div class="skills-container">
+                <div class="skill-item">
+                    <img src="c_icon.png" alt="C Icon">
+                    <div class="skill-description">
+                        <p>C programming language is a general-purpose, procedural computer programming language.</p>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <img src="p_icon.jpg" alt="P Icon">
+                    <div class="skill-description">
+                        <p>Python is an interpreted high-level programming language for general-purpose programming.</p>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <img src="j_icon.png" alt="J Icon">
+                    <div class="skill-description">
+                        <p>Java is a high-level, class-based, object-oriented programming language designed to have as few implementation dependencies as possible.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <div class="container">
+            <section id="contact">
+                <h1>Contact</h1>
+                <h4>Contact me through:</h4>
+                <p>Email: seanashleycastillo@gmail.com</p>
+                <p>Facebook: Sean Castle</p>
+                <p><a href="https://www.facebook.com/profile.php?id=61555419180619">Facebook Link</a></p>
+            </section>
+        </div>
+    </main>
+
+</body>
 </html>
