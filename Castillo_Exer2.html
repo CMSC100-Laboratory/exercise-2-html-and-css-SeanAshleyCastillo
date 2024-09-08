@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercise 2</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,7 +10,7 @@
     <nav class="navbar">
         <ul>
             <li class="logo">
-                <a href="#pfp"><img src="cc_logo.png" alt="Logo"></a>
+                <a href="#about"><img src="cc_logo.png" alt="Logo"></a>
             </li>            
             <li><a href="#about">Autobiography</a></li>
             <li><a href="#projects">Projects</a></li>
@@ -21,73 +19,87 @@
         </ul>
     </nav>
 
-    <!-- Main Content -->
-    <main>
-        <!-- Profile Image Section -->
-        <section id="pfp">
+    <!-- About Section -->
+    <section id="about">
+        <div class="about-container">
+            <!-- Profile Image Section -->
             <div class="pfpimage">
-                <center><img src="pfp.jpg" alt="Profile Image"></center>
+                <img src="pfp.jpg" alt="Profile Image">
             </div>
-        </section>
 
-        <!-- About Section -->
-        <section id="about">
             <!-- Introduction Section -->
-            <div class="container">
-                <div class="content">
-                    <h1>Autobiography</h1>
-                    <p>I am Sean Ashley F. Castillo, currently a BS Computer Science student at the University of the Philippines Los Baños.</p>
-                </div>
+            <div class="content">
+                <h1>Autobiography</h1>
+                <p>
+                    I am Sean Ashley F. Castillo, currently a BS Computer Science student at the University of the Philippines Los Baños.
+                    I aspire to be a software developer who someday will be able to run his own company and create a program that will be useful for the community.
+                    Currently as a student, I have certain degrees of experience in different parts of the field of Computer Science.
+                    These experiences include coding in C, Python, Java, and a little bit of assembly.
+                    In my third year of college, tackling Artificial Intelligence (AI) excites me due to the belief that it will be greatly relevant in the future.
+                </p>
             </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects">
-            <h1>Projects</h1>
-            <div class="project-image">
-                <center><img src="Splash2.png" height="350px" width="350px"></center>
-            </div> 
-            <div class="project-container">
-                <p>Big Iron is a two-player real-time game that is skill-based.</p>
-            </div>
-        </section>
-            
-        <!-- Skills Section -->
-        <section id="skills">
-            <h1>Skills</h1>
-            <div class="skills-container">
-                <div class="skill-item">
-                    <img src="c_icon.png" alt="C Icon">
-                    <div class="skill-description">
-                        <p>C programming language is a general-purpose, procedural computer programming language.</p>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <img src="p_icon.jpg" alt="P Icon">
-                    <div class="skill-description">
-                        <p>Python is an interpreted high-level programming language for general-purpose programming.</p>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <img src="j_icon.png" alt="J Icon">
-                    <div class="skill-description">
-                        <p>Java is a high-level, class-based, object-oriented programming language designed to have as few implementation dependencies as possible.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <div class="container">
-            <section id="contact">
-                <h1>Contact</h1>
-                <h4>Contact me through:</h4>
-                <p>Email: seanashleycastillo@gmail.com</p>
-                <p>Facebook: Sean Castle</p>
-                <p><a href="https://www.facebook.com/profile.php?id=61555419180619">Facebook Link</a></p>
-            </section>
         </div>
-    </main>
+    </section>
+
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container"> <!-- Added container class here -->
+            <h1>Project</h1>
+            <div class="project-image">
+                <center><img src="Splash2.png" height="350px" width="350px" alt="Project Image"></center>
+            </div> 
+            <p>
+                Big Iron is a two-player real-time game that is skill-based, where the two players will try to shoot each other.
+                There are several power-ups available in the game which will spawn while the round is ongoing.
+                Additionally, there is a train that blocks bullets from the player and it moves back and forth from the edges of the screen.
+                It is a first to five game where every time a player gets shot the other player gets a score.
+            </p>
+        </div>
+    </section>
+            
+    <!-- Skills Section -->
+    <section id="skills">
+        <h1>Skills</h1>
+        <div class="skills-container">
+            <div class="skill-item">
+                <img src="c_icon.png" alt="C Icon">
+                <div class="skill-description">
+                    <p>
+                        I have studied different sorting and searching algorithms with the use of C and linked list. 
+                        From these experiences I have a basic understanding on how to use data structures and use them in organizing data.
+                    </p>
+                </div>
+            </div>
+            <div class="skill-item">
+                <img src="p_icon.jpg" alt="P Icon">
+                <div class="skill-description">
+                    <p>
+                        Python is the first programming language that I learned and programmed with. I have a fair amount of knowledge on how its syntax and built in 
+                        functions work but I can only consider myself as someone who has a basic knowledge and understanding of it.
+                    </p>
+                </div>
+            </div>
+            <div class="skill-item">
+                <img src="j_icon.png" alt="J Icon">
+                <div class="skill-description">
+                    <p>
+                        Java is what I and my partner used in the creation of Big Iron my first project. From that experience I have the basic knowledge and understanding 
+                        of Object-Oriented Programming (OOP).
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-container">
+        <h1>Contact Information</h1>
+        <p>Email: sfcastillo@up.edu.ph</p>
+        <p><a href="https://github.com/SeanAshleyCastillo">Github: https://github.com/SeanAshleyCastillo</a></p>
+        &copy; 2024 CC. All rights reserved.
+    </section>
+</main>
 
 </body>
 </html>
